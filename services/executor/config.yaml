@@ -1,0 +1,11 @@
+# s3 config
+s3:
+  endpoint: "http://localhost:9000"
+  region: "us-east-1"
+  access_key: "minioadmin"
+  secret_key: "minioadmin"
+  use_path_style: true
+  buckets:
+    code:   "code"
+    input:  "input"
+    output: "output"

@@ -1,0 +1,9 @@
+ALTER TABLE IF EXISTS submissions DROP CONSTRAINT IF EXISTS submissions_output_id_fkey;
+
+DROP TABLE IF EXISTS checkers;
+DROP TABLE IF EXISTS outputs;
+DROP TABLE IF EXISTS submissions;
+DROP TABLE IF EXISTS inputs;
+DROP TABLE IF EXISTS problems;
+DROP TABLE IF EXISTS users;
+DROP TYPE IF EXISTS submission_result;
