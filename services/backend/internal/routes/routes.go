@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func RegisterRoutes(router *gin.Engine) {
-	router.POST("/signup", handlers.SignupHandler)
-	router.GET("/login", handlers.LoginHandler)
+func RegisterRoutes(router *gin.Engine, auth *handlers.AuthHandler) {
+	router.POST("/signup", auth.SignupHandler)
+	router.POST("/login", auth.LoginHandler)
 }
